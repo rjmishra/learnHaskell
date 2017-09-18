@@ -72,3 +72,17 @@ substring xs (y:ys) | prefix (xs) (y:ys) = True
                     | otherwise = False
 
 -- haskell types Int, Integer, Float, Double, Bool, Char, String
+
+--map function in haskell
+lengths :: [[a]] -> [Int]
+lengths xs = map(length) xs
+
+sumLength :: [[a]] -> Int
+sumLength xs = sum (map(length) xs)
+
+-- filter function in haskell example
+--filter (>3) [1..10]
+
+-- equation reasoning
+f :: Integer -> Integer -> Integer
+f x y = x^2 + y^2
